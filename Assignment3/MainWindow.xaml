@@ -1,0 +1,30 @@
+﻿<Window x:Class="Assignment3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal"  Height="100">
+            <StackPanel Width="250" VerticalAlignment="Center">
+                <Label x:Name="label_nameInput">Name:</Label>
+                <TextBox x:Name="txtbx_fullNameInput" IsReadOnly="True" BorderBrush="White" Focusable="False">John Doe</TextBox>
+            </StackPanel>
+            <StackPanel Width="200" VerticalAlignment="Center">
+                <Label x:Name="label_ageInput">Age:</Label>
+                <TextBox x:Name="txtbx_ageInput" IsReadOnly="True" BorderBrush="White" Focusable="False">35</TextBox>
+            </StackPanel>
+            <CheckBox x:Name="chkbx_isAdultInput" Width="55" VerticalAlignment="Center" IsHitTestVisible="False" Focusable="False">Adult</CheckBox>
+        </StackPanel>
+        <StackPanel Margin="50">
+            <Button x:Name="btn_edit" Width="200" Height="110" Click="btn_edit_Click">
+                <StackPanel Width="300" Orientation="Horizontal" Margin="10">
+                    <Image Source="/images/Edit.jpg"/>
+                    <Label VerticalAlignment="Center" FontSize="24" Padding="20" Content="Edit"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
